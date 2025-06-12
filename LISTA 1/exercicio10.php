@@ -1,5 +1,6 @@
 <?php
-    function boasVindas($nome){
+$nome = "Paula";
+function boasVindas($nome){
         return "Bem-vindo(a)" . $nome;
 }
 
