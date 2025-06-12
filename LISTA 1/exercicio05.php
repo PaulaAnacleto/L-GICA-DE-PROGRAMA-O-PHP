@@ -1,7 +1,7 @@
 <?php
     $pontos = 100;
-    $vitoria = 5;
-    $derrota = 2;
+    $vitoria = 1;
+    $derrota = 1;
 
     $pontos_final += $pontos + ($vitorias * 20);
     $pontos_final -= $pontos - ($derrotas * 15);
