@@ -10,12 +10,6 @@ $carro2 = new Carros();
 //USO DA HERANÇA
 $carroEletrico = new CarroEletrico();
 
-//POLIMORFISMO
-$gato = new Gato();
-echo emitirSom($gato) . "<br>";
-
-echo "<hr>";
-
 $alunos = new alunos();
 
 $alunos->nome = "João";
@@ -28,10 +22,16 @@ $alunos->peso2 = 4;
 
 echo "Nome: " . $alunos->nome . "<br>" . "Idade: " . $alunos->idade . "<br>" . "Matrícula: " . $alunos->matricula . "<br>" . "Nota1: " . $alunos->nota1 . "<br>" . "Nota2: " . $alunos->nota2 . "<br>" . "Peso1: " . $alunos->peso1 . "<br>" . "Peso2: " . $alunos->peso2 . "<br>";
 echo "Média: " . number_format($alunos->calcularMedia($alunos), 2) . "<br>";
-echo  ("Verificação de Aprovação: " . $alunos->   verificarAprovado($alunos) . "<hr>");
+echo "Verificação de aprovação: " . $alunos->verificarAprovado($alunos) . "<br>";
+
+echo "<hr>";
 
 
+//POLIMORFISMO
+$gato = new Gato();
+echo emitirSom($gato) . "<br>";
 
+echo "<hr>";
 //ATRIBUTOS ESPECÍFICOS DO CARRO ELÉTRICO
 $carroEletrico->cor = "Azul";
 $carroEletrico->marca = "BYD";

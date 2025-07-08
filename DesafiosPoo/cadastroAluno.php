@@ -25,9 +25,9 @@ class Alunos{
 
     public function verificarAprovado($aluno) {
         if ($aluno->calcularMedia($aluno) >= 7) {
-            echo "Aluno aprovado!<br>";
+            return "Aluno aprovado!";
         } else {
-            echo "Aluno reprovado!<br>";
+            return "Aluno reprovado!";
         }
     }
 }
